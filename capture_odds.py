@@ -4,7 +4,7 @@ import urllib, urllib2, cookielib, pprint, json, time, sys, codecs
 
 #sys.stdout = codecs.getwriter('utf8')(sys.stdout)
 
-IN_PLAY_MATCHES_URL='https://strands.betfair.com/api/ems/inplay/v0?eventTypeId=1&marketBettingTypes=%5B%22ODDS%22%5D'
+IN_PLAY_MATCHES_URL='https://strands.betfair.com/api/ems/inplay/v1?eventTypeId=1&marketBettingTypes=%5B%22ODDS%22%5D'
 GET_MARKETS_URL='https://strands.betfair.com/api/ems/all-markets/v0?eventId={0}&eventTypeId=1&marketBettingTypes=%5B%22ODDS%22%5D'
 EVENT_URL="https://www.betfair.com/inplayservice/v1.1/eventTimeline?alt=json&eventId={0}&locale=en_GB&ts=1457730988749"
 MARKET_DETAILS_URL="https://strands.betfair.com/api/ems/market-data-aggregator/v0?marketId={0}"
